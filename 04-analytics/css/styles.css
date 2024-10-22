@@ -210,8 +210,10 @@ gap: 1.125rem;
     transform-origin: 50%;
     transform: rotate(-90deg);
     filter: drop-shadow(-10px 0px 1px rgba(103, 146, 255,.3));
-  
+    position: relative;
 }
+
+
 .grafico__circular2{ 
     fill: none;
     stroke: var(--color2);

@@ -70,6 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    box-shadow: 10px 10px var(--colorShadow),10px 1px var(--colorShadow);
 }
 .header{
     display: flex;
@@ -90,7 +91,6 @@ body {
 }
 .description{
     display: flex;
-    padding: 1rem 0;
 }
 .descriptión__grafico{
 width: 35%;
@@ -98,7 +98,7 @@ width: 35%;
 }
 .descriptión__componentes{
 width: 65%;
-padding: 0 1rem;
+padding: 1rem 0;
 
 }
 .description__list{
@@ -106,14 +106,15 @@ padding: 0;
 margin: 0;
 display: flex;
 flex-direction: column;
-gap: 1rem;
-
+justify-content: space-between;
+gap: 1.125rem;
 }
 .list__item{
     list-style: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
- 
+    /* padding-top: .5rem; */
 }
 .item__title{
     font-weight: 500;
@@ -122,11 +123,14 @@ gap: 1rem;
     
 }
 .item__barr{
-    text-align: right;
+    display: flex;
+    
+
 }
 .item__progres{
     height: 5px;
     vertical-align: middle;
+    border-radius: 10px;
 
 }
 #progress-1{
@@ -179,10 +183,59 @@ gap: 1rem;
 }
 
 .description__link{
-
+    padding-top: 1rem;
     text-align: right;
     font-size: .875rem;
-    color: var(--color3);
 
 }
+.description__link a{
+    color: var(--color3);
+    font-weight: 500;
 
+
+}
+.grafica{
+}
+
+.grafico__circular1{ 
+    fill: none;
+    stroke: var(--color1);
+    stroke-width: 15;
+    stroke-dasharray: 35 65;
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+    filter: drop-shadow(-10px 0px 1px rgba(103, 146, 255,.3));
+  
+}
+.grafico__circular2{ 
+    fill: none;
+    stroke: var(--color2);
+    stroke-width: 15;
+    stroke-dasharray: 20 80;
+    transform-origin: 50%;
+    transform: rotate(40deg);
+    filter: drop-shadow(5px 8px 1px rgba(103, 146, 255,.2) );
+}
+.grafico__circular3{ 
+    fill: none;
+    stroke: var(--color3);
+    stroke-width: 15;
+    stroke-dasharray: 30 70;
+    transform-origin: 50%;
+    transform: rotate(117deg);
+    filter: drop-shadow(10px -5px 1px rgba(103, 146, 255,.2));
+
+}
+.grafico__circular4{ 
+    fill: none;
+    stroke: var(--color4);
+    stroke-width: 15;
+    stroke-dasharray: 10 90;
+    transform-origin: 50%;
+    transform: rotate(229deg);
+    filter: drop-shadow(-10px -6px 1px rgba(103, 146, 255,.2));
+
+}
+circle{
+
+}

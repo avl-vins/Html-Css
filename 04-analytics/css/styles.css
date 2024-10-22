@@ -10,25 +10,3 @@ Tabla de contenidos:
 
 /* ----- Fuente ----- */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
-
-
-/* ----- Variables ----- */
-:root {
-    /* colores */
-    --color: #333;
-
-    /* config. */
-    --fuente: 'Merriweather', sans-serif;
-    --ft-size: 1rem;
-    --l-height: 22px;
-}
-
-
-/* ----------------------------- */
-/* ----- Estilos generales ----- */
-/* ----------------------------- */
-body {
-    font-family: var(--fuente);
-    background: linear-gradient(to right, #43389f, #4ec6ca);
-	color: #fff;
-}

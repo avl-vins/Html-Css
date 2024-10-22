@@ -59,6 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .card{
@@ -94,11 +95,11 @@ body {
 }
 .descriptión__grafico{
 width: 35%;
-
 }
+
 .descriptión__componentes{
 width: 65%;
-padding: 1rem 0;
+padding: 1rem;
 
 }
 .description__list{
@@ -122,16 +123,20 @@ gap: 1.125rem;
     flex-grow: 1;
     
 }
-.item__barr{
+/* .item__barr{
     display: flex;
     
 
-}
+} */
 .item__progres{
     height: 5px;
     vertical-align: middle;
     border-radius: 10px;
 
+}
+.item__group{
+    display: flex;
+    align-items: center;
 }
 #progress-1{
     border: 2px solid var(--color1);
@@ -236,6 +241,34 @@ gap: 1.125rem;
     filter: drop-shadow(-10px -6px 1px rgba(103, 146, 255,.2));
 
 }
-circle{
+.grafico__text{
+    font-weight: 500;
+    font-size: .825rem;
+    /* width: 10px; */
+    text-anchor: start;
+    line-height: 1rem;
 
+}
+@media screen and (max-width:480px) {
+    .container{
+    }
+    .description{
+        flex-direction: column;
+    }
+    .descriptión__grafico{
+        width: 100%;
+        text-align: center;
+
+    }
+    
+    .descriptión__componentes{
+        width: 100%;
+    }
+    .item__progres{
+        display: none;
+    }
+    /* .list__item{
+        flex-wrap: wrap;
+        gap: .5rem;
+    } */
 }
